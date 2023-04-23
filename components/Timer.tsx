@@ -71,7 +71,7 @@ function Timer({ id, name, paused }: TimerProps) {
 
   return (
     <div className='shadow p-2 pl-4 rounded-xl'>
-      <h2 className='font-semibold'>{name || 'Unnamed timer'}</h2>
+      <h2 className='font-semibold text-xl'>{name || 'Unnamed timer'}</h2>
       <div className='flex items-center text-lg justify-between w-full'>
         <div className='flex items-center justify-between text-xl'>
           <div className='w-10'>{addZeros(timer.hours)}</div>

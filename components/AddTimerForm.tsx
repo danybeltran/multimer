@@ -62,12 +62,12 @@ function AddTimerForm() {
               className='btn btn-primary w-1/2'
               onClick={() => {
                 setTimers(prev => [
-                  ...prev,
                   {
                     id: randomBytes(20).toString('hex'),
                     name: timerName,
                     paused: true
-                  }
+                  },
+                  ...prev
                 ])
 
                 setAddingTimer(false)
