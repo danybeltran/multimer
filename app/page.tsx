@@ -1,7 +1,7 @@
 'use client'
 
-import AddTimerForm from 'components/AddTimerForm'
-import Timers from 'components/Timers'
+import AddTimerForm from '(components)/AddTimerForm'
+import Timers from '(components)/Timers'
 
 function HomePage() {
   return (

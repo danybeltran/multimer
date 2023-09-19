@@ -4,7 +4,7 @@ import { useDispatch } from 'atomic-state'
 import { useState } from 'react'
 import { randomBytes } from 'crypto'
 
-import { timersState } from 'shared/states'
+import { timersState } from '(shared)/states'
 
 function AddTimerForm() {
   const [addingTimer, setAddingTimer] = useState(false)

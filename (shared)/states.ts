@@ -1,14 +1,14 @@
 import { atom } from 'atomic-state'
 
-export const timersState = atom<
-  {
-    paused: boolean
-    name: string
-    id: string
-  }[]
->({
+const defaultTimers: {
+  paused: boolean
+  name: string
+  id: string
+}[] = []
+
+export const timersState = atom({
   name: 'timers',
-  default: [],
+  default: defaultTimers,
   persist: true,
   actions: {
     removeTimer({ args, dispatch }) {

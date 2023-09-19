@@ -2,7 +2,7 @@
 
 import { useValue } from 'atomic-state'
 
-import { timersState } from 'shared/states'
+import { timersState } from '(shared)/states'
 import Timer from './Timer'
 
 function Timers() {

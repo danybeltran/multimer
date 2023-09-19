@@ -6,7 +6,7 @@ import { AtomicState } from 'atomic-state'
 export default async function MainLayout({ children }) {
   return (
     <AtomicState>
-      <html className='h-full' data-theme='light'>
+      <html className='h-full'>
         <head>
           <meta charSet='utf-8' />
           <meta name='viewport' content='width=device-width, initial-scale=1' />

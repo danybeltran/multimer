@@ -1,5 +1,8 @@
 module.exports = {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './(components)/**/*.{js,ts,jsx,tsx}'
+  ],
   // darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {}
@@ -13,6 +16,9 @@ module.exports = {
       align: ['responsive', 'hover', 'focus', 'active'],
       translate: ['responsive', 'hover', 'focus', 'active']
     }
+  },
+  daisyui: {
+    themes: ['light']
   },
   plugins: [require('daisyui')]
 }

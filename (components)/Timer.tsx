@@ -1,12 +1,12 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Atom, atom, useActions, useAtom } from 'atomic-state'
 import { BsPlay, BsArrowCounterclockwise } from 'react-icons/bs'
 import { AiOutlinePause } from 'react-icons/ai'
 import { FiTrash } from 'react-icons/fi'
 
-import { timersState } from 'shared/states'
+import { timersState } from '(shared)/states'
 
 type TimerProps = {
   id: string
